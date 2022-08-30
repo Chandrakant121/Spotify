@@ -1,0 +1,27 @@
+/* login & register page css  */
+
+.login {
+    margin: auto;
+    width: 300px;
+}
+
+.inputdiv {
+    height: 25px;
+    width: 300px;
+    margin-top: 5px;
+}
+
+.inputdivbtn {
+    height: 30px;
+    margin-top: 5px;
+    width: 100px;
+    border: none;
+}
+
+.inputdivbtn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
