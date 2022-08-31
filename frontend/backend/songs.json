@@ -1,30 +1,52 @@
-{
-    "topsongs": [
-        {
-            "name": "Naacho Naacho",
-            "image": "https://i0.wp.com/www.djsbuzz.in/wp-content/uploads/2022/02/nacho-nacho-rrr-remix-dj-purvish.jpg?w=1000&ssl=1",
-            "release_data": "10 November 2021",
-            "rating": "10",
-            "artists": [
-                "Vishal Mishra",
-                "Rahul Sipligunj"
-            ]
-        },
-        {
-            "name": "Chaka Chak",
-            "image": "https://upload.wikimedia.org/wikipedia/en/e/e5/Atrangi_Re_film_poster.jpg",
-            "release_data": "29 November 2021",
-            "rating": "8",
-            "artists": [
-                "Shreya Ghoshal"
-            ]
-        }
-    ],
-    "topartists": [
-        {
-            "name": "",
-            "dob": "",
-            "rating": ""
-        }
-    ]
-}
+[
+    {
+        "name": "Bad Bunny",
+        "dob": "March 10, 1994",
+        "rating": "9"
+    },
+    {
+        "name": "Harry Styles",
+        "dob": "1 February 1994",
+        "rating": "8"
+    },
+    {
+        "name": "Morgan Wallen",
+        "dob": "May 13, 1993",
+        "rating": "7"
+    },
+    {
+        "name": "Beyonce",
+        "dob": "4 September 1981",
+        "rating": "8"
+    },
+    {
+        "name": "Drake",
+        "dob": "24 October 1986",
+        "rating": "6"
+    },
+    {
+        "name": "Luke Combs",
+        "dob": "March 2, 1990",
+        "rating": "7"
+    },
+    {
+        "name": "The Weeknd",
+        "dob": "February 16, 1990",
+        "rating": "8"
+    },
+    {
+        "name": "Madonna",
+        "dob": "16 August 1958",
+        "rating": "7"
+    },
+    {
+        "name": "Doja Cat",
+        "dob": "October 21, 1995",
+        "rating": "6"
+    },
+    {
+        "name": "Lil Baby",
+        "dob": "December 3, 1994",
+        "rating": "8"
+    }
+]
