@@ -17,7 +17,7 @@ const { register, login } = require("./controllers/auth.controller");
 app.post("/register", register);
 app.post("/login", login);
 
-const artistController = require("./controllers/artsit.controllers")
+const artistController = require("./controllers/artist.controllers")
 app.use("/artists", artistController)
 
 

@@ -1,52 +1,52 @@
 [
     {
         "name": "Bad Bunny",
-        "dob": "March 10, 1994",
+        "dob": "1994-03-10",
         "rating": "9"
     },
     {
         "name": "Harry Styles",
-        "dob": "1 February 1994",
+        "dob": "1994-01-1",
         "rating": "8"
     },
     {
         "name": "Morgan Wallen",
-        "dob": "May 13, 1993",
+        "dob": "1993-05-13",
         "rating": "7"
     },
     {
         "name": "Beyonce",
-        "dob": "4 September 1981",
+        "dob": "1981-09-4",
         "rating": "8"
     },
     {
         "name": "Drake",
-        "dob": "24 October 1986",
+        "dob": "1986-10-24",
         "rating": "6"
     },
     {
         "name": "Luke Combs",
-        "dob": "March 2, 1990",
+        "dob": "1990-03-2",
         "rating": "7"
     },
     {
         "name": "The Weeknd",
-        "dob": "February 16, 1990",
+        "dob": "1990-02-16",
         "rating": "8"
     },
     {
         "name": "Madonna",
-        "dob": "16 August 1958",
+        "dob": "1958-08-16",
         "rating": "7"
     },
     {
         "name": "Doja Cat",
-        "dob": "October 21, 1995",
+        "dob": "1995-10-21",
         "rating": "6"
     },
     {
         "name": "Lil Baby",
-        "dob": "December 3, 1994",
+        "dob": "1994-11-3",
         "rating": "8"
     }
 ]
