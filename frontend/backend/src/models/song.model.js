@@ -11,7 +11,7 @@ const songSchema = new mongoose.Schema({
     name: { type: String, required: true },
     release_data: { type: String, required: true },
     rating: { type: Number, required: true },
-    image: { type: String, required: true },
+    image: { type: String },
     artist: { type: String, required: true },
 }, {
     versionKey: false,

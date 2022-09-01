@@ -5,7 +5,7 @@ import "./Navbar.css"
 const Navbar = () => {
     let datastore = JSON.parse(localStorage.getItem("logindetail"));
     const logout = () => {
-        localStorage.clear();
+        localStorage.clear("logindetail");
     }
     return (
         <div>

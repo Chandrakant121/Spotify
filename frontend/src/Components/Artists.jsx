@@ -5,6 +5,7 @@ import "./Style.css"
 
 export const Artists = () => {
     const [data, setData] = useState([]);
+    
 
     useEffect(() => {
         fetch("http://localhost:5000/artists")

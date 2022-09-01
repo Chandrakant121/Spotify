@@ -24,7 +24,7 @@ export const Songs = () => {
                 <table>
                     <thead>
                         <tr>
-                            <th>Artwork</th>
+                            <th>Cover Image</th>
                             <th>Song</th>
                             <th>Release Date</th>
                             <th>Artist</th>
@@ -39,7 +39,7 @@ export const Songs = () => {
                                     <td>{e.name}</td>
                                     <td>{e.release_data}</td>
                                     <td>{e.artist}</td>
-                                    <td>{e.rating}</td>
+                                    <td>{`${e.rating}/5`}</td>
                                 </tr>
                             })
                         }
