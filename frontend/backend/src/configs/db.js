@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv")
+dotenv.config()
 const connect = () => {
-    return mongoose.connect(
-        "mongodb+srv://abc:abc@cluster0.cybyn6f.mongodb.net/spotify?retryWrites=true&w=majority"
-    );
+    return mongoose.connect(process.env.MONGO);
 };
 module.exports = connect;
