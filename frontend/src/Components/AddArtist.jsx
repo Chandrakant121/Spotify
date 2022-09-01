@@ -50,7 +50,6 @@ export const AddArtist = () => {
         <>
             <Navbar></Navbar>
             {datastore ? <div>
-
                 <div className='login'>
                     <h1>Add Artist</h1>
                     <form onSubmit={registerArtist}>

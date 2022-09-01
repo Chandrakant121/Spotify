@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import "./Style.css"
 
 export const AddSong = () => {
-
+    let datastore = JSON.parse(localStorage.getItem("logindetail"));
     const navigate = useNavigate()
     const [name, setName] = useState('')
     // const [artwork, setArtwork] = useState('')
@@ -58,19 +58,20 @@ export const AddSong = () => {
     return (
         <>
             <Navbar />
-            <div className='login'>
-                <h1>Add Song</h1>
-                <form onSubmit={registerSong}>
-                    <div>
-                        <input
-                            className='inputdiv'
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            type="text"
-                            placeholder="Song Name"
-                        />
-                    </div>
-                    {/* <div>
+            {
+                datastore ? <div className='login'>
+                    <h1>Add Song</h1>
+                    <form onSubmit={registerSong}>
+                        <div>
+                            <input
+                                className='inputdiv'
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                type="text"
+                                placeholder="Song Name"
+                            />
+                        </div>
+                        {/* <div>
                         <input
                             className='inputdiv'
                             value={artwork}
@@ -80,37 +81,37 @@ export const AddSong = () => {
                         />
                     </div> */}
 
-                    <div>
-                        <input
-                            className='inputdiv'
-                            value={release_data}
-                            onChange={(e) => setRelease_Data(e.target.value)}
-                            type="date"
-                            placeholder="release_data"
-                        />
-                    </div>
-                    <div>
-                        <input
-                            className='inputdiv'
-                            onChange={(e) => setRating(e.target.value)}
-                            type="rating"
-                            value={rating}
-                            placeholder="rating"
-                        />
-                    </div>
+                        <div>
+                            <input
+                                className='inputdiv'
+                                value={release_data}
+                                onChange={(e) => setRelease_Data(e.target.value)}
+                                type="date"
+                                placeholder="release_data"
+                            />
+                        </div>
+                        <div>
+                            <input
+                                className='inputdiv'
+                                onChange={(e) => setRating(e.target.value)}
+                                type="rating"
+                                value={rating}
+                                placeholder="rating"
+                            />
+                        </div>
 
-                    <div>
-                        <input
-                            className='inputdiv'
-                            value={artist}
-                            onChange={(e) => setArtist(e.target.value)}
-                            type="text"
-                            placeholder="Artist Name"
-                        />
-                    </div>
-                    <input className='inputdivbtn' type="submit" value="Add Song" />
-                </form>
-            </div>
+                        <div>
+                            <input
+                                className='inputdiv'
+                                value={artist}
+                                onChange={(e) => setArtist(e.target.value)}
+                                type="text"
+                                placeholder="Artist Name"
+                            />
+                        </div>
+                        <input className='inputdivbtn' type="submit" value="Add Song" />
+                    </form>
+                </div> : <h2 style={{ margin: "auto", width: 300, textAlign: "center", marginTop: 100 }} >Login OR Register</h2>}
         </>
     )
 }
