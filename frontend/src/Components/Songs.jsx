@@ -1,23 +1,52 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { useState, useEffect } from "react";
+import "./Style.css"
 
 export const Songs = () => {
-    // {
-    //     "name": "Naacho Naacho",
-    //     "image": "https://i0.wp.com/www.djsbuzz.in/wp-content/uploads/2022/02/nacho-nacho-rrr-remix-dj-purvish.jpg?w=1000&ssl=1",
-    //     "release_data": "10 November 2021",
-    //     "rating": "10",
-    //     "artists": [
-    //         "Vishal Mishra",
-    //         "Rahul Sipligunj"
-    //     ]
-    // },
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch("http://localhost:5000/song")
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                setData(data);
+            });
+        console.log(data)
+    }, []);
+
     return (
         <>
             <Navbar />
-            <div>
-                Songs
+            <> <div className='SongData'>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Artwork</th>
+                            <th>Song</th>
+                            <th>Release Date</th>
+                            <th>Artist</th>
+                            <th>Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            data.map((e, key) => {
+                                return <tr>
+                                    <td>{<img src={e.image} style={{ width: 200 }} />}</td>
+                                    <td>{e.name}</td>
+                                    <td>{e.release_data}</td>
+                                    <td>{e.artist}</td>
+                                    <td>{e.rating}</td>
+                                </tr>
+                            })
+                        }
+                    </tbody>
+                </table>
             </div>
+            </>
         </>
     )
 }

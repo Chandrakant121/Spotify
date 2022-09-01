@@ -20,6 +20,8 @@ app.post("/login", login);
 const artistController = require("./controllers/artist.controllers")
 app.use("/artists", artistController)
 
+const songController = require("./controllers/song.controller")
+app.use("/song", songController)
 
 
 module.exports = app;
